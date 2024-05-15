@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: monospace; /* Use a monospace font for the terminal look */
+    padding: 20px;
+}
+
+#terminal {
+    background-color: #222; /* Darker background for the terminal window */
+    border: 2px solid #0f0; /* Green border like some terminals */
+    padding: 10px;
+    overflow: auto; /* Add scrollbar if content overflows */
+    white-space: pre; /* Preserve spaces and newlines */
+}
+
+p {
+    margin: 5px 0; /* Spacing between lines */
+}
+
