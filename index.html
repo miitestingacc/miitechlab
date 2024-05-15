@@ -3,7 +3,7 @@
 <head>
   <title>miiTechLab</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script> 
 </head>
 <body>
   <h1 id="welcome"></h1> 
@@ -22,9 +22,16 @@
     <input type="text" name="name" placeholder="Name" required>
     <input type="email" name="email" placeholder="Email" required>
     <textarea name="message" placeholder="Message" required></textarea>
-    <div class="g-recaptcha" data-sitekey="6LdYwnAjAAAAAIJUlGdhVn55GCMdVQ1jCxEMl69Q"></div>
-    <button type="submit">Submit</button>
+    <div class="g-recaptcha" data-sitekey="6LdYwnAjAAAAAIJUlGdhVn55GCMdVQ1jCxEMl69Q" data-callback="onSubmit"></div> 
+    <button type="submit" id="submitBtn" disabled>Submit</button> 
   </form>
-  
-  <script src="script.js"></script> </body>
+
+  <script>
+    function onSubmit(token) {
+      document.getElementById("submitBtn").disabled = false;
+    }
+  </script>
+
+  <script src="script.js"></script> 
+</body>
 </html>
