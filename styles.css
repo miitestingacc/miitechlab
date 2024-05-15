@@ -1,19 +1,40 @@
 body {
-    background-color: black;
-    color: white;
-    font-family: monospace; /* Use a monospace font for the terminal look */
-    padding: 20px;
+  background-color: black;
+  color: #FFF5EE; /* Seashell color */
+  font-family: monospace; /* Terminal-like font */
+  text-align: center;
+  padding: 20px;
 }
 
-#terminal {
-    background-color: #222; /* Darker background for the terminal window */
-    border: 2px solid #0f0; /* Green border like some terminals */
-    padding: 10px;
-    overflow: auto; /* Add scrollbar if content overflows */
-    white-space: pre; /* Preserve spaces and newlines */
+h1 {
+  font-size: 24pt;
 }
 
-p {
-    margin: 5px 0; /* Spacing between lines */
+#content {
+  white-space: pre-line; /* Preserve line breaks */
+  margin-bottom: 20px;
 }
 
+#links a {
+  color: #FFF5EE;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form input, form textarea {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.g-recaptcha {
+  margin-bottom: 10px; /* Add margin to the reCAPTCHA */
+}
+
+/* Optional: Add more styles for form elements */
